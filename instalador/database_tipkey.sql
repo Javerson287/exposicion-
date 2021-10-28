@@ -33,7 +33,7 @@ DROP TABLE IF EXISTS usuario;
 CREATE TABLE usuario(
     id INT(11) NOT NULL AUTO_INCREMENT,
     fecha TIMESTAMP NOT NULL,
-    clave VARCHAR(10) NOT NULL,
+    clave VARCHAR(90) NOT NULL,
     correo VARCHAR(30) NOT NULL,
     nombre_usuario VARCHAR(20) NOT NULL,
     PRIMARY KEY(id)
@@ -89,6 +89,9 @@ INSERT informe(indice, text, text2, text3, text4) VALUES ('COPIAS DE SEGURIDAD Y
 INSERT informe(indice, text, text2, text3, text4) VALUES ('ACCESIBILIDAD, USABILIDAD Y LICENCIAMIENTO', 'El sistema cuenta con un fácil y seguro sistema de acceso para el administrador, debido a que esta es la primera versión del software, el mismo solo tendrá una cuenta de administrador y los usuarios serán todos aquellos que visiten la página, optando así por un modelo de no tener usuarios registrados, por lo cual el sistema será aún más liviano.', 'En el apartado de la usabilidad tenemos que los usuarios podrán interactuar con los botones, podrán ver mucha de la información que es publica, además de poder contactar y ver disponibilidad de productos dependiendo de la empresa.', 'El sistema cuenta con una paleta de colores simple, de tal manera que a pesar de tener poco colores, todos combinan entre si dando armonía al diseño.', 'El código del sistema de información cuenta con código documentado, de manera que cualquier otro programador pueda entender el que, el cómo y el porqué de las diferentes funciones para así poder dar mantenimiento al sistema.');
 
 INSERT informe(indice, text, text2, text3) VALUES ('INFORME ADMINISTRATIVO', 'En nuestro sistema de información podrá encontrar alojado el informe administrativo, con el fin de buscar apartado de interés para las personas, lo cual puede ser los términos y condiciones o demás información importante para el correcto uso del software.', 'Lastimosamente, el software no es perfecto, aún tiene algunas cosas que se pueden mejorar, puesto que esta es la primera versión del mismo, por lo cual hay procesos que no están del todo optimizados, sin embargo, este software se ha hecho lo más eficiente posible para solucionar las problemáticas planteadas por el cliente.','Durante algún tiempo se tuvo inconvenientes con la parte visual, algunas funcionalidades de parte del backend y otras falencias en el código o la lógica aplicada al sistema. Esto ya no ha de ser un problema tan grande, debido a que gracias al tiempo estipulado para entregar el proyecto, se ha ido mejorando poco a poco y reparando algunas falencias encontradas en el camino.');
+
+INSERT informe(indice, text, text2, text3,text4, text5,text6) VALUES ('FORTALEZAS Y DEBILIDADES DEL SISTEMA','Fortalezas:','Gracias a nuestro diseño interactivo, el usuario tiene cierta facilidad de entender las diferentes funcionalidades del software.', 'El software cuenta con un sistema de encriptación, el cual ayuda a mantener a salvo ciertos datos de los usuarios.','Debilidades:','Durante un tiempo algunas de nuestras secciones tuvieron un diseño deficiente por falta de adaptación al momento de cambiar el tamaño de la pantalla.', 'La herramienta que ayuda a realizar la busqueda de disponibilidad de ambientes, no cuenta con una gran funcionalidad.');
+
 
 ALTER TABLE prestamo_ambientes
     ADD CONSTRAINT prestamo_1 FOREIGN KEY (id)
