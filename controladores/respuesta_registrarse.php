@@ -9,6 +9,7 @@
     
     if ($clave == $clave2)
     {
+        
        
        usuario::consultar_usuario(  $correo, $usuario, $clave );
        

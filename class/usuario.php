@@ -6,10 +6,15 @@
  * param       texto            clave                 clave que ingresa el usuario
 */
 include_once('conexion.php');
+
 class usuario extends conex
 {
     static function consultar_usuario (  $correo, $usuario, $clave )
     {
+        include('../controladores/metho.php');
+       
+        $clave = $encriptar($clave);
+       
         $conexion=self::conectar();
         
         $sql= " insert into usuario ( fecha, clave, correo, nombre_usuario) values ( now(),'$clave', '$correo','$usuario')";
@@ -17,7 +22,7 @@ class usuario extends conex
         if ($conexion ->affected_rows > 0)
             {
                 
-                echo '<script language="javascript">alert("Tus datos se guardaron");window.location.href="../controladores/c-iniciar_seccion.php";</script>';
+               echo '<script language="javascript">alert("Tus datos se guardaron");window.location.href="../controladores/c-iniciar_seccion.php";</script>';
                 
             }
             else

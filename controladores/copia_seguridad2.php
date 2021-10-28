@@ -61,13 +61,16 @@
     
     //echo count($lineas);
     $handle = fopen('../copia/db_copia'.'.sql','w+');
-
+    $correr="";
     foreach($lineas as $linea){
-        fwrite($handle, $linea);
+        $correr .= $linea;
+        
         //echo $linea;
     }
-
-    fwrite($handle,$return);
+    include('metho.php');
+    $correr=$encriptar($correr);
+    fwrite($handle, $correr);
+   
     fclose($handle);
  
    header('location:../index.php');

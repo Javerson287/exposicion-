@@ -19,9 +19,11 @@
             $conexion = Conex::conectar();
             //se verifica si hay errores en la conexion con la base de datos
             $errores = array();
+            include('metho.php');
             //se busca la copia de la base de datos ingresada y se estrae el contenido
             $documentText = file_get_contents('../uploat/db_copia.sql');
-            $documentText = rtrim($documentText, "\n");
+            $documentText = $desencriptar(rtrim($documentText, "\n"));
+            
             $documentText = str_replace("//", "", $documentText);
 
             // se elininan los puntos y comas a los delimiter para que no genere errores

@@ -7,18 +7,21 @@ $sql= " SELECT clave FROM `usuario` WHERE correo='$to'";
 $resultado = $conexion->query( $sql );
 if ($fila = mysqli_fetch_array($resultado))
 {
+    include("metho.php");
+    $clave = $desencriptar( $fila[ 'clave']);
+    //echo $clave;die;
     $to = $_GET['correo'];
     $subject = "Contraseña";
-    $message = "La contraseña de su cuenta TIPKEY es ". $fila[ 'clave'] ;
+    $message = "La contraseña de su cuenta TIPKEY es ".$clave ;
     $headers = "From: tipkeysena@gmail.com" . "\r\n" . "CC: tipkeysena@gmail.com";
     //echo $row['clave'];
     $r =mail($to, $subject, $message, $headers);
     if ($r){
        
-        echo '<script language="javascript">alert("Correo enviado a: "'.$_GET['correo'].'");window.location.href="../index.php";</script>';
+        echo '<script language="javascript">alert("Correo enviado" );window.location.href="../index.php";</script>';
     }else{
         
-        echo '<script language="javascript">alert("No se pudo enviar el correo a: "'.$_GET['correo'].'");window.location.href="c-recuperar.php.php";</script>';
+        echo '<script language="javascript">alert("No se pudo enviar el correo ");window.location.href="c-recuperar.php.php";</script>';
     }
 
 }else
