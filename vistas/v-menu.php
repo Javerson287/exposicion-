@@ -25,7 +25,7 @@
     <ul class="nav">
       
       <li><a href="vistas/cerrar_destroy.php" ><span class="material-icons">account_circle</span>cerrar</a>
-      <li><a href="controladores/eliminar.php?id=<?php echo $_SESSION['usuario'];?>" >elinar cuenta</a>
+      <li><a href="controladores/eliminar.php?id=<?php echo $_SESSION['usuario'];?>" >Eliminar Cuenta</a>
       </li>
     </ul>
   </div>
