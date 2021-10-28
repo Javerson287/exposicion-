@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id = centrar>
-    <h1>TypKey</h1>
+    <h1>TipKey</h1>
     <hr style="height:2px;border-width:0;background-color:blue">
             
   </div>
@@ -19,7 +19,7 @@
 
     <fieldset>
       <h2 class="fs-title">Ingresar Instructor</h2>
-      <input type="number" name="CC" id="imp" placeholder="Numero de Identificacion" required>
+      <input type="number" name="CC" id="imp" placeholder="Número de Identificación" required>
       <input type="text" name="nombre" id="imp" placeholder="Nombres y Apellidos" required />
       
       

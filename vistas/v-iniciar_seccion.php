@@ -4,20 +4,20 @@
 <div id = centrar>
 
 
-<h1>TypKey</h1>
+<h1>TipKey</h1>
 
 <br><br><br><br>
 <form action="../controladores/c-autenticacion.php" method="POST">
-    Usuario
+    Correo
     <br>
     <input type ="email" name="usuario" required>
     <br><br>
-    clave
+    Contreaseña
     <br>
     
     <input type ="password"  name="clave" required minlength="5" maxlength="8" title="error"><br>
     
-    <a href="../controladores/c-recuperar.php">olvido su clave?</a>
+    <a href="../controladores/c-recuperar.php">Olvide mi Contraseña</a>
     <br><br>
     
     <input type ="submit" value = "Aceptar">

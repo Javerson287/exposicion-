@@ -1,5 +1,5 @@
 <div id = centrar>
-<h1>TypKey</h1>
+<h1>TipKey</h1>
 
 <!-- para separar el titulo de el formulario -->
 <br><br>
@@ -22,7 +22,7 @@
     <br>
     <input type ="password" name = "c_contraseña" required minlength="5" maxlength="8">
     <br><br>
-    <input type="checkbox" value="" required > <a href="../vistas/terminos.php" target="_blank"> Aceptar terminos y condiciones </a>
+    <input type="checkbox" value="" required > <a href="../vistas/terminos.php" target="_blank"> Aceptar términos y condiciones </a>
     <br><br>
     <br>
     

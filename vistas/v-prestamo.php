@@ -10,7 +10,7 @@
 <body>
    
     <div id = centrar>
-         <h1>TypKey</h1>
+         <h1>TipKey</h1>
          <hr style="height:2px;border-width:0;background-color:blue">
          <link href="css/estilo3.css" rel="stylesheet" type="text/css">
     </div>
@@ -27,8 +27,8 @@
                 
 
             <thead><br>
-                <th>Inicio prestamo:</th>
-                <th>Fin prestamo:</th>
+                <th>Inicio PRÉSTAMO:</th>
+                <th>Fin PRÉSTAMO:</th>
                 <th>Horario:</th>
                 <th>Ambiente:</th>
                 <th>instructor:</th>
@@ -100,14 +100,14 @@
 <!--barra de busqueda de disponbilidad-->
 
 <br><br>
-    <form  class="form" action="../controladores/disponibilidad.php"  method= "POST">
+    <!-- <form  class="form" action="../controladores/disponibilidad.php"  method= "POST">
 
         Disponibilidad:<input type="date" name="fecha">
         <input type="time" name="hora">
         
 
         <input type="submit" class="btn btn-primary btn-block"  name="submit" value="buscar">
-    </form>
+    </form> -->
 
 
 

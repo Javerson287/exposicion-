@@ -27,7 +27,7 @@
             Al acceder o usar la página web de nuestro servicio, usted aprueba que haya leído, entendido y aceptado estar sujeto a estos Términos:
             </p>
 
-            <div class="titulo"> <h2>Retención del derecho a cambiar de ofertan</h2></div>
+            <div class="titulo"> <h2>Retención del derecho a cambiar de oferta</h2></div>
     
             <p>Podemos, sin aviso previo, cambiar los servicios; dejar de proporcionar los servicios o cualquier característica de los servicios que ofrecemos; <br>
                 o crear límites para los servicios. Podemos suspender de manera permanente o temporal el acceso a los servicios <br>
@@ -39,7 +39,7 @@
 
         <p>El Servicio y todos los materiales incluidos o transferidos, incluyendo, sin limitación, software, imágenes, texto, gráficos, logotipos, patentes, marcas registradas, marcas de servicio, derechos de autor,<br>
             fotografías, audio, videos, música y todos los Derechos de Propiedad Intelectual relacionados con ellos, son la propiedad exclusiva de Tipkey. <br>
-            Salvo que se indique explícitamente en este documento, no se considerará que nada en estos Términos crea una licencia en o bajo ninguno de dichos Derechos de Propiedad Intelectual, y tu aceptas no vender, <br>
+            Salvo que se indique explícitamente en este documento, no se considerará que nada en estos Términos crea una licencia en o bajo ninguno de dichos Derechos de Propiedad Intelectual, y tú aceptas no vender, <br>
             licenciar, alquilar, modificar, distribuir, copiar, reproducir, transmitir, exhibir públicamente, realizar públicamente, publicar, adaptar, editar o crear trabajos derivados de los mismos. <br><br>
         </p>
     

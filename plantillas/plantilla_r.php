@@ -8,9 +8,7 @@
         <link rel = "stylesheet" type = " text/css" href ="../css/estilos.css">
         <link href="../css/bootstrap.css" rel="stylesheet">
         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
-
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMRG2NYLTN"></script>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMRG2NYLTN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -19,6 +17,7 @@
   gtag('config', 'G-LMRG2NYLTN');
 		
   </script>
+
 
     </head>
 

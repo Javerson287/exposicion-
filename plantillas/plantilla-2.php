@@ -8,8 +8,7 @@
 
         <link rel = "stylesheet" href ="css/estilos.css">
 
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMRG2NYLTN"></script>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMRG2NYLTN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -18,6 +17,7 @@
   gtag('config', 'G-LMRG2NYLTN');
 		
   </script>
+
         
     </head>
 

@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id = centrar>
-    <h1>TypKey</h1>
+    <h1>TipKey</h1>
     <hr style="height:2px;border-width:0;background-color:blue">
             
   </div>

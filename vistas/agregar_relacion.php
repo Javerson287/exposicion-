@@ -19,7 +19,7 @@
 
     <fieldset>
         
-      <h2 class="fs-title">ingresar relacion entre instructores y programas</h2>
+      <h2 class="fs-title">INGRESAR RELACIÓN ENTRE INSTRUCTORES Y PROGRAMAS</h2>
       <br>
             <br>
       <label for="imp">programa:</label>
