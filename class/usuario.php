@@ -16,22 +16,23 @@ class usuario extends conex
         $clave = $encriptar($clave);
        
         $conexion=self::conectar();
-        
-        $sql= " insert into usuario ( fecha, clave, correo, nombre_usuario) values ( now(),'$clave', '$correo','$usuario')";
-        $resultado = $conexion->query($sql);
-        if ($conexion ->affected_rows > 0)
+        $sql= " SELECT * FROM usuario where correo='$correo' and borrar='0'";
+        $result = $conexion->query($sql);
+        $conteo = $result->num_rows;
+        if ($conteo < 1) {
+            $sql= " insert into usuario ( fecha, clave, correo, nombre_usuario) values ( now(),'$clave', '$correo','$usuario')";
+            $resultado = $conexion->query($sql);
+            if ($conexion ->affected_rows > 0)
             {
-                
                echo '<script language="javascript">alert("Tus datos se guardaron");window.location.href="../controladores/c-iniciar_seccion.php";</script>';
-                
             }
             else
             {
-                
-                
-                
-                echo '<script language="javascript">alert("el correo ya esta registrado intente con otro");window.location.href="./c-registrarse.php";</script>';
+                echo '<script language="javascript">alert("no se pudo guardar su información");window.location.href="./c-registrarse.php";</script>';
             }
+        }else{
+            echo '<script language="javascript">alert("el correo ya esta en uso");window.location.href="./c-registrarse.php";</script>';
+        }
         
     }
 }

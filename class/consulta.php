@@ -51,7 +51,7 @@ class consulta extends Conex
             $sql  = " SELECT id ";
             $sql .= " FROM usuario ";
             $sql .= " WHERE correo = '$usuario' ";
-            $sql .= " AND clave = '$clave' ";
+            $sql .= " AND clave = '$clave' AND borrar='0'";
             //echo $sql;die;
             $resultado = $conexion->query( $sql );
 
