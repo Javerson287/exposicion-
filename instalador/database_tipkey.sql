@@ -34,7 +34,7 @@ CREATE TABLE usuario(
     id INT(11) NOT NULL AUTO_INCREMENT,
     fecha TIMESTAMP NOT NULL,
     clave VARCHAR(90) NOT NULL,
-    correo VARCHAR(30) NOT NULL,
+    correo VARCHAR(30) NOT NULL unique,
     nombre_usuario VARCHAR(20) NOT NULL,
     PRIMARY KEY(id)
 );
